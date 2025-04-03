@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
 }
+
 header {
     background-color: black;
     color: white;
@@ -24,8 +25,13 @@ header {
 .nav-principal ul li a {
     color: white;
 }
+
+.fa-solid {
+    padding-left: 0.5em;
+}
+
 .banheiro {
-    background-image: url(img/Banheiro\ de\ fundo.jpg);
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(img/Banheiro\ de\ fundo.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -38,7 +44,6 @@ header {
 
 .conteudoBanheiro {
     width: 50%;
-    padding: 2em;
     margin: 20%;
 }
 
@@ -52,14 +57,79 @@ header {
     font-size: 20px;
 }
 
-.conteudoBanheiro button {
+.conteudoBanheiro a button {
     padding: 1em;
     background-color: black;
+    margin-top: 1em;
+    border-radius: 10px;
+    width: 180px;
+    color: white;
+}
+
+.conteudoBanheiro button:hover {
+    background-color: rgba(255, 255, 255, 0.445);
+    cursor: pointer;
+    color: black;
+}
+
+.conteudo {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10em;
+}
+
+.lado1 {
+    width: 50%;
+    padding-right: 5em;
+    margin-left: 20%;
+    margin-top: 8em;
+
+}
+
+.lado1 h1, p, h3{
+    padding-bottom: 0.5em;
+}
+
+.lado1 h1 {
+    font-size: 35px;
+}
+
+.lado1 p {
+    font-size: 18px;
+}
+
+.lado1 button {
+    padding: 1em;
+    background-color: white;
     margin-top: 2em;
     border-radius: 10px;
     width: 150px;
 }
 
-.conteudoBanheiro button a {
+.lado1 button:hover {
+    background-color: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
     color: white;
+}
+
+.lado2 {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.sofa{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.lustre {
+    width: 150px;
+    margin-left: 30%;
+    margin-top: 1em;
 }
